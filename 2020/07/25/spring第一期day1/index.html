@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>spring第一期day1 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="day1平时我们创建对象的时候，直接new一个Dog dog &#x3D; new Dog();当我们使用了spring之后，早期我们在创建bean的时候使用配置，把所有的bean在application.xml中声明 1&lt;bean id&#x3D;&quot;dog&quot; class&#x3D;&quot;com.test.Dog&quot; &gt; 表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是ioc管理,但是这样做的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spring第一期day1">
+<meta property="og:url" content="http://yoursite.com/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="day1平时我们创建对象的时候，直接new一个Dog dog &#x3D; new Dog();当我们使用了spring之后，早期我们在创建bean的时候使用配置，把所有的bean在application.xml中声明 1&lt;bean id&#x3D;&quot;dog&quot; class&#x3D;&quot;com.test.Dog&quot; &gt; 表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是ioc管理,但是这样做的">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-25T07:27:32.992Z">
+<meta property="article:modified_time" content="2020-06-21T08:04:42.843Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-spring第一期day1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/" class="article-date">
+  <time datetime="2020-07-25T07:27:32.992Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      spring第一期day1
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p>平时我们创建对象的时候，直接new一个<br>Dog dog = new Dog();<br>当我们使用了spring之后，早期我们在创建<code>bean</code>的时候使用配置，把所有的bean在<code>application.xml</code>中声明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean id=<span class="string">"dog"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"com.test.Dog"</span> &gt;</span><br></pre></td></tr></table></figure>
+<p>表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是<code>ioc</code>管理,但是这样做的话就会写得越来越多，显得很臃肿。因此现在基本用注解。</p>
+<p>首先我们用上面xml配置的方式写一个生成<code>bean</code>的过程,建立spring的<code>bean.xml</code>，在里面写创建<code>bean</code>的配置。（见Spring笔记(第一次))</p>
+<p>实际上<code>spring</code>的<code>bean</code>就是把<code>bean</code>放进<code>Map</code>容器里，给容器中注册<code>Bean</code>可以用<code>@Bean</code>，配置中的<code>id</code>即为<code>key</code>。可以用<code>@(&quot;person01&quot;)</code>设置<code>key</code>值。</p>
+<p>首先我们要知道<code>IOC</code>的原理：1.先初始化容器2.然后注册<code>Bean</code><br>用到的注解  </p>
+<ul>
+<li><code>@Bean</code>声明要注册的<code>Bean</code>  </li>
+<li><code>@Configuration</code>声明配置类，配置类和<code>xml</code>配置文件是一样的  </li>
+<li><code>@ComponentScan</code>声明扫描注册<code>Bean</code>的规则(具体代码见cap2包)<br>如规定特定注解，特定类，或者自定义(custom)规则</li>
+<li><code>getBean(&quot;person&quot;)</code>表示从容器中获取<code>key</code>为<code>person</code>的<code>Bean</code></li>
+<li><code>@Scope(&quot;singleton&quot;)</code>声明是单实例还是多实例，不声明默认是单实例<br>单实例：创建<code>IOC</code>容器的时候实例<code>Bean</code>就被创建了<br>多实例：仅当<code>Bean</code>被使用的时候才被创建</li>
+<li><code>@Lazy</code>懒加载，单例模式下<code>Bean</code>在使用的时候才会创建</li>
+</ul>
+<p><strong>遇到的问题</strong></p>
+<ul>
+<li>创建项目时pom.xml首行报错<br>参考<a href="https://blog.csdn.net/sheng_xinjun/article/details/54892558" target="_blank" rel="noopener">pom.xml第一行一直报错</a></li>
+<li>无法创建<code>spring</code>文件<br>原来是<code>eclipse</code>需要安装<code>spring</code>插件，安装插件的方法参考有道笔记<em>eclipse安装插件</em></li>
+</ul>
+<p><strong>day1课堂总结：</strong><br>本堂课主要讲了spring的作用，从原始的xml配置创建<code>bean</code>到后面使用注解创建<code>bean</code>,我们要知道<code>IOC</code>容器可以理解为一个大Map，对应key和value。IOC容器首先是初始化容器，然后创建Bean，通过key/value方式保存在Map中，可以通过getBean()获取对应的Bean。主要学了几个注解<br><code>@Bean(&quot;person01&quot;)</code>创建一个<code>key</code>为<code>person</code>的<code>Bean</code>放入容器中，如果不加括号，默认方法名为<code>key</code>值<br><code>@Configuration</code>放在类上，声名此类为配置类。<br><code>@ComponentScan()</code>规定扫描注入<code>Bean</code>的规则，如哪些类可以注入，哪些注解可以注入，排除哪些类（exclude），也可以新建类继承<code>TypeFilter</code>接口，自定义规则，可见代码cap2。<br><code>@Scope(Singleton)</code>设置<code>Bean</code>是单例还是多例，<code>Singleton</code>表示单例，<code>prototype</code>表示多例<br><code>@Lazy</code>设置懒加载，单例下使用，原本单例是在容器初始化同时创建Bean，但使用懒加载则在使用到Bean的时候才会创建。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/" data-id="ckd1c0g6w0000c8tj4493gxsf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/07/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">我的第一篇文章</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/">spring第一期day1</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
