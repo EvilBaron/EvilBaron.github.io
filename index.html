@@ -13,13 +13,13 @@
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="一狗平天下">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/img/head-luozi.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -43,10 +43,10 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/head-luozi.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">一狗平天下</a></h1>
 		</hgroup>
 		
 
@@ -56,6 +56,8 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+	        
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -77,15 +79,23 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="qq" target="_blank" href="/assets/img/head-luozi.jpg" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="douban" target="_blank" href="#" title="douban"><i class="icon-douban"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="bilibili" target="_blank" href="/assets/img/head-luozi.jpg" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
+			
+			<!-- 网易云音乐插件 -->
+			
+				<div style="position:absolute; bottom:120px left:auto; width:85%">
+					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=240 height=52 src="//music.163.com/outchain/player?type=2&id=515687543&auto=1&height=32"></iframe>
+				</div>
+			
+			
 		</nav>
 	</header>		
 </div>
@@ -101,13 +111,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/head-luozi.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">一狗平天下</h1>
 			</hgroup>
 			
 			
+			
+				
 			
 				
 			
@@ -118,24 +130,26 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="qq" target="_blank" href="/assets/img/head-luozi.jpg" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="douban" target="_blank" href="#" title="douban"><i class="icon-douban"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="bilibili" target="_blank" href="/assets/img/head-luozi.jpg" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -173,26 +187,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p>平时我们创建对象的时候，直接new一个<br>Dog dog = new Dog();<br>当我们使用了spring之后，早期我们在创建<code>bean</code>的时候使用配置，把所有的bean在<code>application.xml</code>中声明</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean id=<span class="string">"dog"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"com.test.Dog"</span> &gt;</span><br></pre></td></tr></table></figure>
-<p>表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是<code>ioc</code>管理,但是这样做的话就会写得越来越多，显得很臃肿。因此现在基本用注解。</p>
-<p>首先我们用上面xml配置的方式写一个生成<code>bean</code>的过程,建立spring的<code>bean.xml</code>，在里面写创建<code>bean</code>的配置。（见Spring笔记(第一次))</p>
-<p>实际上<code>spring</code>的<code>bean</code>就是把<code>bean</code>放进<code>Map</code>容器里，给容器中注册<code>Bean</code>可以用<code>@Bean</code>，配置中的<code>id</code>即为<code>key</code>。可以用<code>@(&quot;person01&quot;)</code>设置<code>key</code>值。</p>
-<p>首先我们要知道<code>IOC</code>的原理：1.先初始化容器2.然后注册<code>Bean</code><br>用到的注解  </p>
-<ul>
-<li><code>@Bean</code>声明要注册的<code>Bean</code>  </li>
-<li><code>@Configuration</code>声明配置类，配置类和<code>xml</code>配置文件是一样的  </li>
-<li><code>@ComponentScan</code>声明扫描注册<code>Bean</code>的规则(具体代码见cap2包)<br>如规定特定注解，特定类，或者自定义(custom)规则</li>
-<li><code>getBean(&quot;person&quot;)</code>表示从容器中获取<code>key</code>为<code>person</code>的<code>Bean</code></li>
-<li><code>@Scope(&quot;singleton&quot;)</code>声明是单实例还是多实例，不声明默认是单实例<br>单实例：创建<code>IOC</code>容器的时候实例<code>Bean</code>就被创建了<br>多实例：仅当<code>Bean</code>被使用的时候才被创建</li>
-<li><code>@Lazy</code>懒加载，单例模式下<code>Bean</code>在使用的时候才会创建</li>
-</ul>
-<p><strong>遇到的问题</strong></p>
-<ul>
-<li>创建项目时pom.xml首行报错<br>参考<a href="https://blog.csdn.net/sheng_xinjun/article/details/54892558" target="_blank" rel="noopener">pom.xml第一行一直报错</a></li>
-<li>无法创建<code>spring</code>文件<br>原来是<code>eclipse</code>需要安装<code>spring</code>插件，安装插件的方法参考有道笔记<em>eclipse安装插件</em></li>
-</ul>
-<p><strong>day1课堂总结：</strong><br>本堂课主要讲了spring的作用，从原始的xml配置创建<code>bean</code>到后面使用注解创建<code>bean</code>,我们要知道<code>IOC</code>容器可以理解为一个大Map，对应key和value。IOC容器首先是初始化容器，然后创建Bean，通过key/value方式保存在Map中，可以通过getBean()获取对应的Bean。主要学了几个注解<br><code>@Bean(&quot;person01&quot;)</code>创建一个<code>key</code>为<code>person</code>的<code>Bean</code>放入容器中，如果不加括号，默认方法名为<code>key</code>值<br><code>@Configuration</code>放在类上，声名此类为配置类。<br><code>@ComponentScan()</code>规定扫描注入<code>Bean</code>的规则，如哪些类可以注入，哪些注解可以注入，排除哪些类（exclude），也可以新建类继承<code>TypeFilter</code>接口，自定义规则，可见代码cap2。<br><code>@Scope(Singleton)</code>设置<code>Bean</code>是单例还是多例，<code>Singleton</code>表示单例，<code>prototype</code>表示多例<br><code>@Lazy</code>设置懒加载，单例下使用，原本单例是在容器初始化同时创建Bean，但使用懒加载则在使用到Bean的时候才会创建。</p>
-
+        
+          <a class="article-more-a" href="/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/#more">more >></a>
+        
       
 
       
@@ -337,6 +334,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -381,7 +389,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 John Doe
+    		&copy; 2020 一狗平天下
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -462,6 +470,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -617,5 +629,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":40},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>

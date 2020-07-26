@@ -8,22 +8,22 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>spring第一期day1 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="day1平时我们创建对象的时候，直接new一个Dog dog &#x3D; new Dog();当我们使用了spring之后，早期我们在创建bean的时候使用配置，把所有的bean在application.xml中声明 1&lt;bean id&#x3D;&quot;dog&quot; class&#x3D;&quot;com.test.Dog&quot; &gt; 表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是ioc管理,但是这样做的">
+  <meta name="description" content="day1平时我们创建对象的时候，直接new一个Dog dog &#x3D; new Dog();当我们使用了spring之后，早期我们在创建bean的时候使用配置，把所有的bean在application.xml中声明">
 <meta property="og:type" content="article">
 <meta property="og:title" content="spring第一期day1">
 <meta property="og:url" content="http://yoursite.com/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="day1平时我们创建对象的时候，直接new一个Dog dog &#x3D; new Dog();当我们使用了spring之后，早期我们在创建bean的时候使用配置，把所有的bean在application.xml中声明 1&lt;bean id&#x3D;&quot;dog&quot; class&#x3D;&quot;com.test.Dog&quot; &gt; 表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是ioc管理,但是这样做的">
+<meta property="og:description" content="day1平时我们创建对象的时候，直接new一个Dog dog &#x3D; new Dog();当我们使用了spring之后，早期我们在创建bean的时候使用配置，把所有的bean在application.xml中声明">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-25T07:27:32.992Z">
-<meta property="article:modified_time" content="2020-06-21T08:04:42.843Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2020-07-26T07:09:42.721Z">
+<meta property="article:author" content="一狗平天下">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/img/head-luozi.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -47,10 +47,10 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/head-luozi.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">一狗平天下</a></h1>
 		</hgroup>
 		
 
@@ -60,6 +60,8 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+	        
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -81,15 +83,23 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="qq" target="_blank" href="/assets/img/head-luozi.jpg" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="douban" target="_blank" href="#" title="douban"><i class="icon-douban"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="bilibili" target="_blank" href="/assets/img/head-luozi.jpg" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
+			
+			<!-- 网易云音乐插件 -->
+			
+				<div style="position:absolute; bottom:120px left:auto; width:85%">
+					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=240 height=52 src="//music.163.com/outchain/player?type=2&id=515687543&auto=1&height=32"></iframe>
+				</div>
+			
+			
 		</nav>
 	</header>		
 </div>
@@ -105,13 +115,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/head-luozi.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">一狗平天下</h1>
 			</hgroup>
 			
 			
+			
+				
 			
 				
 			
@@ -122,24 +134,26 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="qq" target="_blank" href="/assets/img/head-luozi.jpg" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="douban" target="_blank" href="#" title="douban"><i class="icon-douban"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="bilibili" target="_blank" href="/assets/img/head-luozi.jpg" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -175,6 +189,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h2><p>平时我们创建对象的时候，直接new一个<br>Dog dog = new Dog();<br>当我们使用了spring之后，早期我们在创建<code>bean</code>的时候使用配置，把所有的bean在<code>application.xml</code>中声明</p>
+ <a id="more"></a>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;bean id=<span class="string">"dog"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"com.test.Dog"</span> &gt;</span><br></pre></td></tr></table></figure>
 <p>表示新建了一个bean，id为dog，把它放进了spring进行管理，这就是<code>ioc</code>管理,但是这样做的话就会写得越来越多，显得很臃肿。因此现在基本用注解。</p>
 <p>首先我们用上面xml配置的方式写一个生成<code>bean</code>的过程,建立spring的<code>bean.xml</code>，在里面写创建<code>bean</code>的配置。（见Spring笔记(第一次))</p>
@@ -273,7 +289,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://evilbaron.github.io/2020/07/25/spring%E7%AC%AC%E4%B8%80%E6%9C%9Fday1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,6 +325,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#day1"><span class="toc-number">1.</span> <span class="toc-text">day1</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -332,7 +361,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 John Doe
+    		&copy; 2020 一狗平天下
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -413,6 +442,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -568,5 +601,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":40},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>
